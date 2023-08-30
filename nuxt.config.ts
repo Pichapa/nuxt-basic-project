@@ -2,17 +2,22 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "MyShop",
+      // title: "MyShop",
       // script: [{ src: "/bootstrap.bundle.min.js" }],
     },
   },
   devtools: { enabled: true },
 
-  css: ["~/node_modules/bootstrap/scss/bootstrap.scss"],
-  plugins: [
+  css: ["~/node_modules/bootstrap/dist/css/bootstrap.css"],
+  // plugins: [
+  //   {
+  //     src: "~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+  //     mode: "client",
+  //   },
+  // ],
+  script: [
     {
-      src: "~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-      mode: "client",
-    },
-  ],
+      src: '~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+    }
+    ]
 });
