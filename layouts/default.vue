@@ -12,8 +12,7 @@
 <script setup>
 </script>
 
-<style lang="scss">
-@use "/assets/scss/main.scss";
+<style>
 
 .navbar {
   border-radius: 14px;
